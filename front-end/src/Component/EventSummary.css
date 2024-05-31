@@ -1,0 +1,109 @@
+/* EventSummary.css */
+.summary-container {
+    display: flex;
+    
+    justify-content: space-between; /* Add space between the two summaries */
+    margin:0; /* Add margin around the container */
+    padding-bottom: 55px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(201, 236, 243);
+}
+
+.Confirm, .pending,.total {
+    flex: 0 0 48%; /* Set the width of each summary */
+    border: 1px solid #ccc; /* Add a border for clarity */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Add margin between the summaries */
+}
+h3{
+    color:white;
+}
+.pending {
+    flex: 0 0 48%; /* Set the width of each summary */
+    border: 1px solid #ccc; /* Add a border for clarity */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Add margin between the summaries */
+    background-color: rgb(241, 241, 71); /* Set background color to yellow */
+}
+.summary-header1, .summary-footer1 {
+    background-color: rgb(54, 161, 54);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+.summary-header2, .summary-footer2 {
+    /* background-color: rgb(247, 247, 63); */
+    background-color: rgb(250, 171, 24);
+    color:white;
+    padding: 10px;
+    text-align: center;
+}
+.summary-header3, .summary-footer3 {
+    background-color: rgb(92, 92, 255);
+    color:white;
+    padding: 10px;
+    text-align: center;
+}
+.summary-header1,.summary-header2 ,summary-header3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.summary-header svg {
+    margin-right: 10px; /* Add margin to the right of the logo */
+    width: 24px;
+    height: 24px;
+}
+
+.summary-content1 {
+    background-color: white;
+    padding: 20px;
+    text-align: left;
+    font-weight: bold; /* Make the text bold */
+    color: black; /* Make the text green */
+    /* border-bottom: 1px solid lightgray;  */
+}
+.summary-content2 {
+    background-color: white;
+    padding: 20px;
+    text-align: left;
+    font-weight: bold; /* Make the text bold */
+    color: black; /* Make the text green */
+    /* border-bottom: 1px solid lightgray;  */
+}
+.summary-content3 {
+    background-color: white;
+    padding: 20px;
+    text-align: left;
+    font-weight: bold; /* Make the text bold */
+    color: black; /* Make the text green */
+    /* border-bottom: 1px solid lightgray;  */
+}
+
+.summary-content p {
+    margin: 5px 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid lightgray;
+}
+
+.summary-content p:last-child {
+    border-bottom: none;
+}
+@media (min-width: 768px) {
+    .Confirm, .pending, .total {
+        flex: 0 0 calc(50% - 20px); /* Two boxes per row on tablets */
+    }
+}
+
+@media (min-width: 992px) {
+    .Confirm, .pending, .total {
+        flex: 0 0 calc(33.33% - 20px); /* Three boxes per row on larger screens */
+    }
+}
