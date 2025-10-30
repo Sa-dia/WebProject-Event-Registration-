@@ -25,4 +25,4 @@ The **Event Registration System** is a full-stack application designed to manage
 
 
 
-### Frontend (React.js)
+
